@@ -13,6 +13,8 @@ Este é o meu portfólio de desenvolvedor, criado utilizando **Vue.js** com **Vi
 - [Vue Styled Components](https://vue-styled-components.com/) - Estilização baseada em componentes para Vue
 - [Vite](https://vitejs.dev/) - Build Tool para Vue.js
 - [TypeScript](https://www.typescriptlang.org/)
+- [Pinia](https://pinia.vuejs.org/) - Gerenciamento de estado
+- [Vue Router](https://router.vuejs.org/) - Gerenciamento de rota
 
 ---
 
@@ -21,13 +23,28 @@ Este é o meu portfólio de desenvolvedor, criado utilizando **Vue.js** com **Vi
 ```
 portfolio/
 ├── src/
-│   ├── components/        # Componentes reutilizáveis
-│   ├── assets/            # Imagens e ícones
-│   ├── App.vue            # Componente raiz
-│   ├── main.js            # Entrada principal
-├── public/                # Arquivos estáticos
-├── index.html             # Página principal
-├── package.json           # Configurações e dependências do projeto
+│   ├── assets/              # Ícones, imagens, fontes, etc.
+│   ├── components/          # Componentes reutilizáveis
+│   │   ├── ui/              # Botões, Cards, Loaders, etc.
+│   │   ├── layout/          # Navbar, Footer, Sidebar, etc.
+│   │   ├── sections/        # Sessões específicas (Home, Projetos, Contato, etc.)
+│   ├── views/               # Páginas principais do site
+│   │   ├── PortfolioView.vue # Página do portfólio
+│   │   ├── ResumeView.vue    # Página do currículo
+│   │   ├── HomeView.vue      # Página inicial
+│   ├── router/              # Configuração do Vue Router
+│   │   ├── index.ts         # Rotas da aplicação
+│   ├── store/               # Gerenciamento de estado (Pinia)
+│   ├── styles/              # Estilos globais
+│   │   ├── variables.css    # Variáveis de cores e estilos globais
+│   │   ├── global.css       # Reset de estilos e configurações gerais
+│   ├── utils/               # Funções auxiliares e helpers
+│   ├── App.vue              # Componente raiz
+│   ├── main.ts              # Ponto de entrada da aplicação
+├── public/                  # Arquivos estáticos
+├── index.html               # Página HTML principal
+├── vite.config.ts           # Configuração do Vite
+├── package.json             # Dependências e scripts do projeto
 ├── README.md              # Este arquivo 😃
 ```
 
