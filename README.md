@@ -15,9 +15,7 @@ Este é o meu portfólio de desenvolvedor, criado utilizando **Vue.js** com **Vi
 - [TypeScript](https://www.typescriptlang.org/)
 - [Pinia](https://pinia.vuejs.org/) - Gerenciamento de estado
 - [Vue Router](https://router.vuejs.org/) - Gerenciamento de rota
-- [
-   
-](https://primevue.org/) - Biblioteca de componentes UI para Vue
+- [Prime Vue](https://primevue.org/) - Biblioteca de componentes UI para Vue
 
 ---
 
