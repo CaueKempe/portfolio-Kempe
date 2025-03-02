@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@primeuix/themes": "^1.0.0",
+    "@stitches/core": "^1.2.8",
     "@vue-styled-components/core": "^1.9.0",
     "pinia": "^3.0.1",
     "primevue": "^4.3.1",
