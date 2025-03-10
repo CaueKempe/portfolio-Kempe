@@ -31,7 +31,7 @@ import CornerPanel from './CornerPanel.vue';
 .side-panel-container {
   width: 100%;
   height: 100%; 
-    gap: 1rem;
+  gap: 1rem;
   
   display: flex;
   flex-direction: column;

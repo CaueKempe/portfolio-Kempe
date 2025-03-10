@@ -9,6 +9,7 @@ import SidePanel from './components/sections/SidePanel.vue';
     <div class="content-container">
       <Header />
       <ContentPanel></ContentPanel>
+      
     </div>
     
   

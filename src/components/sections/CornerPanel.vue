@@ -1,5 +1,6 @@
 <script setup lang="ts">
 
+
 </script>
 
 
@@ -9,7 +10,7 @@
     <div class="corner-panel-container">
 
       <img src="../../assets/Picolo.jpeg" alt="">
-      <p>Cauê Kempe Rodrigues</p>
+      <p >Cauê Kempe Rodrigues</p>
 
     </div>
 
@@ -31,7 +32,7 @@
 
 .corner-panel-container {
   width: 80%;
-  height: 80%s; 
+  height: 80%; 
   padding: 0.5rem;
   gap: 1rem;
   
@@ -51,8 +52,8 @@ img {
 }
 
 
-p {
+/* p {
   padding: 0;
   margin: 0;
-}
+} */
 </style>
