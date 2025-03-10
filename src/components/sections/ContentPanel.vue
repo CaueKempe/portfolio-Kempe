@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import SmallContentBlock from './ SmallContentBlock.vue';
-import iBatiLogo from '../../assets/iBati.png'; // Importação direta
+import iBatiLogo from '../../assets/iBati.png'; 
+import rubcubeLogo from '../../assets/rubcube.png'; 
+import myRobot from '../../assets/myRobot.png';
 
 
 </script>
@@ -9,17 +11,30 @@ import iBatiLogo from '../../assets/iBati.png'; // Importação direta
   <div class="panel-container">
 
     <div class="twin-panel top">
-      <SmallContentBlock :imgSrc="iBatiLogo" 
+      <SmallContentBlock 
+        :imgSrc="iBatiLogo" 
         title="Cargo"
         company="Nome da empresa"
         period="Jan 2020 - Dez 2023"
         description="Breve resumo das atividades" 
      />
-      <SmallContentBlock title="Cargo" company="Nome da empresa" period="Jan 2020 - Dez 2023" description="Breve resumo das atividades" />
+      <SmallContentBlock 
+        :imgSrc="rubcubeLogo" 
+        title="Cargo"
+        company="Nome da empresa"
+        period="Jan 2020 - Dez 2023"
+        description="Breve resumo das atividades" 
+        />
     </div>
 
     <div class="solo-panel">
-      <SmallContentBlock title="Cargo" company="Nome da empresa" period="Jan 2020 - Dez 2023" description="Breve resumo das atividades" />
+      <SmallContentBlock 
+        :imgSrc="myRobot" 
+        title="Cargo"
+        company="Nome da empresa"
+        period="Jan 2020 - Dez 2023"
+        description="Breve resumo das atividades" 
+      />
     </div>
     
   </div>
