@@ -9,7 +9,7 @@
 
     <div class="corner-panel-container">
 
-      <img src="../../assets/Picolo.jpeg" alt="">
+      <img src="../../assets/Foto.jpg" alt="">
       <p >Cauê Kempe Rodrigues</p>
 
     </div>
