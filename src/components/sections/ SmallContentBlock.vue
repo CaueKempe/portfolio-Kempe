@@ -1,16 +1,21 @@
 <script setup lang="ts">
-defineProps<{
+import { computed } from 'vue';
+
+const props = defineProps<{
   title: string;         // Cargo ou função
   company: string;       // Nome da empresa
   period: string;        // Tempo de atuação (ex: "Jan 2020 - Dez 2023")
   description: string;   // Breve resumo das atividades
   imgSrc: string;        // Caminho da imagem do logo da empresa
 }>();
+
+const formattedDescription = computed(() => {
+  return props.description.replace(/\n/g, '<br>');
+});
 </script>
 
 <template>
     <div class="small-content-block">
-
         <div class="inner-container">
             <img :src="imgSrc" alt="Logo" class="company-logo">
 
@@ -18,8 +23,8 @@ defineProps<{
                 <h3 class="title">{{ title }}</h3>
                 <p class="company">{{ company }}</p>
                 <p class="period">{{ period }}</p>
-                <p class="description">{{ description }}</p>
-            </div>
+                <p class="description" v-html="formattedDescription"></p>
+              </div>
            
         </div>
 
@@ -30,7 +35,7 @@ defineProps<{
 <style scoped>
 .inner-container {
     width: 100%;
-    height: 100%;
+    min-height: 22rem;
     padding: 1rem;
 
     border-radius: 3px;
@@ -40,15 +45,15 @@ defineProps<{
     transition: transform 0.2s ease-in-out;
     
     display:flex;
-    align-items: center;
+    align-items: top;
     gap: 2rem;
 
 }
 
 .small-content-block {
     width: 100%;
-    height: 100%;
-    padding: 1rem;
+    min-height: 100%;
+    padding: 2rem;
     
 
 }

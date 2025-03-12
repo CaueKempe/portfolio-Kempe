@@ -5,6 +5,8 @@ import rubcubeLogo from '../../assets/rubcube.png';
 import myRobot from '../../assets/myRobot.png';
 
 
+
+
 </script>
 
 <template>
@@ -13,27 +15,50 @@ import myRobot from '../../assets/myRobot.png';
     <div class="twin-panel top">
       <SmallContentBlock 
         :imgSrc="iBatiLogo" 
-        title="Cargo"
-        company="Nome da empresa"
-        period="Jan 2020 - Dez 2023"
-        description="Breve resumo das atividades" 
+        title="Desenvolvedor de Software Júnior"
+        company="iBati"
+        period="ago de 2024 - dez de 2024 · 5 meses"
+        description="Como desenvolvedor júnior, ganhei mais autonomia e consegui trazer novas propostas e projetos, introduzindo bots de conversação e inteligência artificial para otimizar o sistema.
+                    - Vertex AI
+                    - Dialogflow CX
+                    - JavaScript
+                    - Python" 
      />
-      <SmallContentBlock 
-        :imgSrc="rubcubeLogo" 
-        title="Cargo"
-        company="Nome da empresa"
-        period="Jan 2020 - Dez 2023"
-        description="Breve resumo das atividades" 
-        />
+     <SmallContentBlock 
+        :imgSrc="iBatiLogo" 
+        title="Estagiário de desenvolvimento de software"
+        company="iBati"
+        period="ago de 2024 - dez de 2024 · 5 meses"
+        description="No estágio, aprendi a trabalhar em um produto já em andamento, colaborando com a equipe para entender o projeto, manter a qualidade e implementar melhorias.
+                    - Desenvolvimento full stack
+                    - JQuery
+                    - JavaScript
+                    - PHP
+                    - Banco de dado
+                    - Document AI
+                    - Google Cloud Platform (GCP)" 
+     />
     </div>
 
-    <div class="solo-panel">
+    <div class="twin-panel">
+
+      <SmallContentBlock 
+        :imgSrc="rubcubeLogo" 
+        title="Estagiário de desenvolvimento de software"
+        company="Rubcube"
+        period="mar de 2024 - jun de 2024 · 4 meses"
+        description="Participei do RubCamp, um programa de profissionalização de profissionais no inicio da carreira de duração de 3 meses na RubCube. Nesse bootcamp aprendi a criar/planejar projetos utilizando as seguintes tecnologias:</br>
+                    - TypeScript (Back-end, criação de API's utilizando arquitetura MVC)
+                    - React Js (Front-end Web)
+                    - React Native (Front-end Mobile(android))
+                    - Python (Dashboard de dados)" 
+        />
       <SmallContentBlock 
         :imgSrc="myRobot" 
-        title="Cargo"
-        company="Nome da empresa"
-        period="Jan 2020 - Dez 2023"
-        description="Breve resumo das atividades" 
+        title="Instrutor de Robotica"
+        company="My Robot"
+        period="nov de 2020 - jul de 2022 · 1 ano 9 meses"
+        description="Como instrutor de robótica tenho como objetivo auxiliar e desenvolver a criatividade e o desenvolvimento de meus alunos para que possam extrair o máximo que a robótica pode oferecer. Tentando sempre repassar todo o conhecimento que adquiri durante meu período como competidor." 
       />
     </div>
     
@@ -44,6 +69,7 @@ import myRobot from '../../assets/myRobot.png';
 
 .panel-container {
     width: 100%;
+    height: 100%;
 
     display: flex;
     flex-direction: column;

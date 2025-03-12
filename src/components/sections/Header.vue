@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import { defineEmits } from 'vue';
+
+const emit = defineEmits(['trocar-pagina']);
 </script>
 
 <template>
@@ -6,8 +9,8 @@
     <nav class="nav">
       <div class="header-container">
         <div class="nav-links">
-          <a href="#">Portfolio</a>
-          <a href="#">Currículo</a>
+          <a href="#" @click.prevent="emit('trocar-pagina', 'portfolio')">Portfólio</a>
+          <a href="#" @click.prevent="emit('trocar-pagina', 'curriculo')">Currículo</a>
         </div>
       </div>
     </nav>
@@ -47,6 +50,7 @@
   font-size: 1.2rem;
   transition: color 0.3s ease;
   padding: 0.5rem 1rem; 
+  cursor: pointer;
 }
 
 .nav-links a:hover {
