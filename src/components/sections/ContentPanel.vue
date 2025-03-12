@@ -17,7 +17,7 @@ import myRobot from '../../assets/myRobot.png';
         :imgSrc="iBatiLogo" 
         title="Desenvolvedor de Software Júnior"
         company="iBati"
-        period="ago de 2024 - dez de 2024 · 5 meses"
+        period="dez de 2024 - o momento · 4 meses"
         description="Como desenvolvedor júnior, ganhei mais autonomia e consegui trazer novas propostas e projetos, introduzindo bots de conversação e inteligência artificial para otimizar o sistema.
                     - Vertex AI
                     - Dialogflow CX
