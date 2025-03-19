@@ -6,7 +6,7 @@ import myRobot from '../../assets/myRobot.png';
 
 
 
-
+teste
 </script>
 
 <template>
